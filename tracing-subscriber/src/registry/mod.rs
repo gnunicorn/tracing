@@ -63,7 +63,6 @@
 //! [`LookupSpan`]: trait.LookupSpan.html
 //! [`SpanData`]: trait.SpanData.html
 use tracing_core::{field::FieldSet, span::Id, Metadata};
-use std::borrow::Cow;
 
 /// A module containing a type map of span extensions.
 mod extensions;
