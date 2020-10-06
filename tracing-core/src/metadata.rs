@@ -156,8 +156,8 @@ impl<'a> Metadata<'a> {
     }
 
     /// Returns the name of the span.
-    pub fn name(&'a self) -> Cow<'a, str> {
-        Cow::Borrowed(&self.name)
+    pub fn name(&self) -> &str {
+        &self.name
     }
 
     /// Returns a string describing the part of the system where the span or
@@ -165,8 +165,8 @@ impl<'a> Metadata<'a> {
     ///
     /// Typically, this is the module path, but alternate targets may be set
     /// when spans or events are constructed.
-    pub fn target(&'a self) -> Cow<'a, str> {
-        Cow::Borrowed(&self.target)
+    pub fn target(&self) -> &str {
+        &self.target
     }
 
     /// Returns the path to the Rust module where the span occurred, or
