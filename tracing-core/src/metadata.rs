@@ -124,7 +124,7 @@ impl<'a> Metadata<'a> {
     /// Construct new metadata for a span or event, with a name, target, level, field
     /// names, and optional source code location.
     pub const fn new(
-        name: &'static str,
+        name: &'a str,
         target: &'a str,
         level: Level,
         file: Option<&'a str>,
